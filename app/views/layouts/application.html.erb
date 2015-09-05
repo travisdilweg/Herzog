@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="col-xs-4 slogan">
-			Cinemaniacal Quotes from Hollywood and Beyond
+			Cinemaniacal Quotations
 		</div>
 		<div class="col-xs-5 links">
 			<%= link_to 'Contribute', '#' %>
@@ -29,7 +29,20 @@
 	<hr />
 	<br class="clear" />
 
+
 <%= yield %>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "This does not suffice. Encore!", "#", :class => 'next-quote' %>
+		</div>
+		<div class="col-xs-6 footer-blurb">
+			Festering film fever from the West Coast of the Empire State 
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
