@@ -9,20 +9,22 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-			<div class="circle">
-  				<br />
-  				LIVE		
-  				<br />
-  				WATCH
-  				<br />
-  				DIE
-			</div>
+			<%= link_to root_path, :class => 'logo' do %>
+				<div class="circle">
+  					<br />
+  					There's action		
+  					<br />
+  					only if
+  					<br />
+  					there's danger
+				</div>
+			<% end %>
 		</div>
 		<div class="col-xs-4 slogan">
 			Cinemaniacal Quotations
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
@@ -36,7 +38,7 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-xs-6">
-			<%= link_to "This does not suffice. Encore!", "#", :class => 'next-quote' %>
+			<%= link_to "This does not suffice. Encore!", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-6 footer-blurb">
 			Festering film fever from the West Coast of the Empire State 
