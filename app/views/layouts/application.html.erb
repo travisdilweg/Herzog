@@ -30,10 +30,14 @@
 	</header>
 	<hr />
 	<br class="clear" />
-
-
-<%= yield %>
-
+	<div class="container">
+		<%if flash[:error].present? %>
+			<div class="colxs-10 col-xs-offset-1 alert alert-danger">
+				<%= flash[:error].html_safe %>
+			</div>
+		<% end %>
+		<%= yield %>
+	</div>
 
 <div class="footer">
 	<div class="container">
